@@ -1,0 +1,68 @@
+/*#pacman {
+    position: relative;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: yellow;
+  }*/
+
+  /**{
+      margin: 0px;
+      padding: 0px;
+  }*/
+
+  body{
+      background-color: blanchedalmond;
+  }
+
+  #center{
+    background-color: black;
+    width: 1200px;
+    height: 600px;
+    overflow: hidden;
+    top: 100px;
+    margin: auto;
+    position: relative;
+}
+
+  #pacman {
+    width: 150px;
+    height: 150px;
+    position: relative;
+  }
+
+  #pacman > div {
+    background-color: #ff0;
+    height: 40px;
+    width: 80px;
+  }
+
+  .pacman-top {
+    top: 0;
+    border-radius: 100px 100px 0 0;
+    animation: spinTop .5s infinite linear;
+  }
+
+  .pacman-bottom {
+    bottom: 0;
+    border-radius: 0 0 100px 100px;
+    animation: spinBottom .5s infinite linear;
+  }
+
+  @keyframes spinTop {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(-35deg);
+    }
+  }
+
+  @keyframes spinBottom {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(35deg);
+    }
+  }
